@@ -1,49 +1,75 @@
+body{
+font-family: Arial;
+background:#eee;
+margin:0;
+}
 
-/* Linhas zebradas */
-        .dashboard-table tbody tr:nth-child(even) {
-            background: #f8fafc;
-        }
+.container{
+display:flex;
+flex-direction:column;
+align-items:center;
+padding:40px;
+}
 
-        /* Efeito hover com elevação */
-        .dashboard-table tbody tr:hover {
-            background: #e0e7ff;
-            transform: scale(1.01);
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-        }
 
-        /* Destaque na primeira linha de dados */
-        .dashboard-table tbody tr:first-child td {
-            border-top: 3px solid var(--accent);
-        }
 
-        /* Remove borda da última linha */
-        .dashboard-table tbody tr:last-child td {
-            border-bottom: none;
-        }
+h1{
+margin-bottom:20px;
+}
 
-:root {
-       --accent: #007bff; /* Cor de destaque (azul) */
-   }
+.lista{
+list-style:none;
+padding:0;
+width:250px;
+}
 
-   table{
-    padding: 40px;
-    text-align: center;
-   }
+.lista li{
+background:#5f9ea0;
+color:white;
+padding:10px;
+margin:5px 0;
+text-align:center;
+border-radius:5px;
+}
 
-   th{
-    background-color: cadetblue;
-    padding: 20px;
-   }
 
-   td{
-    padding: 20px;
-   }
 
-   div{
-    background-color:white;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
-    padding: 80px;
-   }
+.lista li:hover{
+background:#3e7f80;
+cursor:pointer;
+}
+
+.lista li:nth-child(even){
+background:#7fb5b7;
+}
+
+
+table{
+border-collapse:collapse;
+width:600px;
+background:white;
+box-shadow:0 0 5px rgba(0,0,0,0.3);
+}
+
+th{
+background:#5f9ea0;
+color:black;
+padding:15px;
+}
+
+td{
+padding:15px;
+text-align:center;
+border-top:3px solid #2b86d1;
+}
+
+
+
+tr:nth-child(even){
+background:#f4f4f4;
+}
+
+
+tr:hover{
+background:white;
+}
